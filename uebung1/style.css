@@ -1,0 +1,90 @@
+body {
+  font-size: : 18px;
+  line-height: : 1.5em;
+  font-family:"Verdana", Tahoma
+}
+
+h1 {
+  font-size: 50px;
+  font-family:"Verdana", Tahoma, Arial, Times, sans-serif;
+}
+
+.highlight {
+  font-size: 75px;
+}
+
+#myID {
+  border: 6px solid orange;
+}
+
+.multiline {
+  background: rgba(125,48,255,0.5);
+  background: rgb(125,48,255);
+
+  color: 33ff88;
+  border-bottom: 3px dashed black;
+
+}
+
+.meinrechteck {
+  width: 300px;
+  height: 150px;
+  background: blue;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.meinrechteck::after {
+content: 'huhu!';
+display: block;
+color: white;
+padding: 20px;
+}
+
+.meinrechteck2 {
+  width: 150px;
+  height: 150px;
+  background: yellow;
+
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+.meinrechteck2::after {
+content: 'yeah';
+display: block;
+padding: 20px;
+color: blue;
+font-family: Arial;
+}
+
+.meinrechteck3 {
+  width: 80px;
+  height: 150px;
+  background: rgba(0,0,0,0.5);
+
+  position: fixed;
+  top: 50px;
+  right: 20px;
+}
+
+
+ul.horizontal{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+ul.horizontal li{
+  float: left;
+  display: block;
+  width: 170px;
+  margin: 0.5px;
+  padding: 5px;
+  background: rgba(255,0,0,0.5)
+}
