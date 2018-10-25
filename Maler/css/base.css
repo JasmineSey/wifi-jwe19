@@ -1,7 +1,7 @@
 :root {
   --screen-max: 1200px;
   --base-font: "Montserrat"; sans-serif;
-  --base-font2: "Pridi"; sans-serif;
+  --base-font2: "Pridi"; "Times New Roman", serif;
 
   --grey-light: #fefefe;
   --grey-dark: #525252;
@@ -10,7 +10,6 @@
   --font-color-light: var(--grey-light);
 
   --grey-dark-footer: #525252;
-
 }
 
 @font-face {
@@ -62,6 +61,41 @@ body {
   flex-flow: column;
   min-height: 100vh;
 }
+
+@media screen and (min-width: 576px) {
+  footer .footer-top {
+    display: flex;
+  }
+
+  footer .footer-left,
+  footer .footer-right {
+    flex: 1;
+  }
+
+  footer .footer-right {
+      text-align: right;
+  }
+
+}
+
+  @media screen and (min-width: 768px) {
+    body {
+    background: purple;
+    }
+  }
+
+    @media screen and (min-width: 992px) {
+      body {
+      background: blue;
+      }
+    }
+
+      @media screen and (min-width: 1200px) {
+        body {
+        background: blue;
+        }
+      }
+
 
 html * {
   box-sizing: border-box;
@@ -125,25 +159,20 @@ text-transform: uppercase;
 footer ul{
 list-style: none;
 margin: 0;
-padding: 30px 0px 30px 0px;
+padding-left: 0;
 }
 
 footer .footer-top {
-  display: flex;
 }
 
 footer .footer-left {
-  flex: 1;
 }
 
 footer .footer-right {
-  flex: 1;
-  text-align: right;
 }
 
 footer .footer-bottom {
   font-family: var(--base-font2);
   font-weight: lighter;
   color: var(--grey);
-  padding-bottom: 20px;
 }
