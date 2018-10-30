@@ -10,6 +10,8 @@
   --font-color-light: var(--grey-light);
 }
 
+/*Schriften*/
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -54,6 +56,8 @@ html * {
   box-sizing: border-box;
 }
 
+/*logo z-index bezieht sich auf die Posotion des Logos*/
+
 #logo {
   position: fixed;
   z-index: 100;
@@ -75,18 +79,26 @@ html * {
 
 #logo-part-2 {
   position: absolute;
+  z-index: 100;
   top: 0;
   left: 10em;
   width: 9em;
   height: 5em;
 }
 
-#logo-part-2 A {
+#logo-part-2 a {
   width: 100%;
   height: 100%;
   display: block;
   background-color: white;
+  text-decoration: none;
 }
+
+#logo-part-2 span {
+  padding-left: auto;
+}
+
+/*Logo Ende*/
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -114,23 +126,43 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background: purple;
   }
+
+  .teaser p {
+  max-width: 50%
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   body {
-    background: blue;
   }
+
+  .teaser p {
+  max-width: 50%
+  }
+
+.teaser {
+    height: 35vw;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
   body {
-    background: blue;
   }
+
+  .teaser p {
+  max-width: 50%
+  }
+
+.teaser {
+  height: 35vw;
 }
 
-header {
+}
+
+header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
@@ -138,7 +170,7 @@ header {
   overflow: hidden;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -146,13 +178,13 @@ header img {
   display: block;
 }
 
-header .inner-wrapper {
+header#main-header .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
 }
 
-header h1 {
+header#main-header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -162,10 +194,43 @@ header h1 {
   text-transform: uppercase;
 }
 
+/*Start Main*/
+
 main {
-  background: lightgrey;
+  background: white;
   flex: 1;
 }
+
+main .inner-wrapper {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+}
+
+.content-element .header h2 {
+  color: var(--grey-dark);
+  font-family: var(--base-font2);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.content-element .teaser {
+background: -webkit-linear-gradient(rgba(255, 165, 0, 0.5),
+            rgba(255, 165, 0, 0.5)),
+            url(../image/main_orange.jpg)
+            no-repeat;
+background-size: cover;
+}
+
+.teaser {
+font-family: var(base-font2);
+color: var(--grey-light);
+font-weight: lighter;
+}
+
+
+/* Hier beginnt der Footer*/
+
 
 footer .inner-wrapper {
   position: relative;
