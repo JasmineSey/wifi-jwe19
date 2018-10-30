@@ -11,7 +11,6 @@
 }
 
 /*Schriften*/
-
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -48,6 +47,12 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: "Pridi";
+  src: url(../fonts/Pridi-ExtraLight.ttf);
+  font-weight: 200;
+}
+
 html, body {
   margin: 0;
 }
@@ -57,7 +62,6 @@ html * {
 }
 
 /*logo z-index bezieht sich auf die Posotion des Logos*/
-
 #logo {
   position: fixed;
   z-index: 100;
@@ -94,12 +98,9 @@ html * {
   text-decoration: none;
 }
 
-#logo-part-2 span {
-  padding-left: auto;
-}
+#logo-part-2 span {}
 
 /*Logo Ende*/
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
@@ -125,41 +126,50 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-  }
+  body {}
 
   .teaser p {
-  max-width: 50%
+    max-width: 50%;
   }
 
+  .content-text p {
+    max-width: 50%;
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
-  body {
-  }
+  body {}
 
   .teaser p {
-  max-width: 50%
+    max-width: 50%;
   }
 
-.teaser {
-    height: 35vw;
+  .teaser {
+    min-height: none;
+    max-height: 40rem;
   }
 
+  .content-text p {
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-  }
+  body {}
 
   .teaser p {
-  max-width: 50%
+    max-width: 50%
   }
 
-.teaser {
-  height: 35vw;
-}
+  .teaser {
+    min-height: none;
+    max-height: 40rem;
+  }
 
+  .content-text p {
+    max-width: 50%;
+  }
 }
 
 header#main-header {
@@ -176,6 +186,7 @@ header#main-header img {
   object-fit: cover;
   object-position: center;
   display: block;
+  border-bottom: 20px solid #004d53;
 }
 
 header#main-header .inner-wrapper {
@@ -190,12 +201,13 @@ header#main-header h1 {
   left: 0;
   color: var(--grey-light);
   font-family: var(--base-font2);
-  font-weight: lighter;
+  font-weight: 200;
   text-transform: uppercase;
+  font-size: 400%;
+  line-height: 90%;
 }
 
 /*Start Main*/
-
 main {
   background: white;
   flex: 1;
@@ -215,23 +227,41 @@ main .inner-wrapper {
 }
 
 .content-element .teaser {
-background: -webkit-linear-gradient(rgba(255, 165, 0, 0.5),
-            rgba(255, 165, 0, 0.5)),
-            url(../image/main_orange.jpg)
-            no-repeat;
-background-size: cover;
+  background: -webkit-linear-gradient(rgba(255, 165, 0, 0.5),
+    rgba(255, 165, 0, 0.5)),
+    url(../image/main_orange.jpg) no-repeat;
+  background-size: cover;
 }
 
 .teaser {
-font-family: var(base-font2);
-color: var(--grey-light);
-font-weight: lighter;
+  font-family: var(base-font2);
+  color: var(--grey-light);
+  font-weight: lighter;
+  min-height: 35vm;
 }
 
+.content-element .content-text img {
+  display: block;
+  margin: 1em 0;
+}
+
+.content-text {
+
+}
+
+.content-element a.button {
+  display: inline-block;
+  padding: 1em 2em;
+  background: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.content-element a.button:hover {
+  opacity: .6;
+}
 
 /* Hier beginnt der Footer*/
-
-
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
