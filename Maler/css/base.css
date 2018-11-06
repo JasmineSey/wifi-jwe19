@@ -157,6 +157,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1250px) {
+  header#main-header h1,
+  .content-element > header,
+  .content-element .teaser .inner-wrapper,
+  .content-element .content-text {}
+
+}
+
 @media screen and (min-width: 1200px) {
   body {}
 
@@ -221,6 +229,8 @@ main .inner-wrapper {
   margin: 0 auto;
 }
 
+/*Start content 01*/
+
 .content-element .header h2 {
   color: var(--grey-dark);
   font-family: var(--base-font2);
@@ -263,6 +273,17 @@ main .inner-wrapper {
   opacity: .6;
 }
 
+/*Ende content 01*/
+
+/* Start content02*/
+
+#brillux .content-text {
+  text-align: center;
+}
+
+
+/* Start content02*/
+
 /* Hier beginnt der Footer*/
 footer .inner-wrapper {
   position: relative;
@@ -272,6 +293,7 @@ footer .inner-wrapper {
 
 footer {
   background: var(--grey-dark);
+  margin-top: 2rem;
 }
 
 footer a {
@@ -298,4 +320,5 @@ footer .footer-bottom {
   font-family: var(--base-font2);
   font-weight: lighter;
   color: var(--grey);
+  margin: 2rem auto;
 }
