@@ -98,13 +98,15 @@ html * {
   text-decoration: none;
 }
 
-#logo-part-2 span {}
+#logo-part-2 a span {
+  margin: 0 auto;
+  width: 9em;
+}
 
 /*Logo Ende*/
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
-  background: orange;
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -135,7 +137,7 @@ body {
   .content-text p {
     max-width: 50%;
   }
-  
+
 }
 
 @media screen and (min-width: 992px) {
