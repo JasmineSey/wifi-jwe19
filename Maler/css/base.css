@@ -281,8 +281,24 @@ main .inner-wrapper {
   text-align: center;
 }
 
+.content-element img {
+  max-width: 100%;
+}
 
-/* Start content02*/
+.content-element .content-img img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/*Ende content02*/
+
+
+
 
 /* Hier beginnt der Footer*/
 footer .inner-wrapper {

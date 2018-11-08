@@ -29,6 +29,8 @@ nav.main-navigation ul::after {
   clear: both;
 }
 
+/*height 0 entfernt die Abstände die zwischen Element float und Element clear kommen könnten*/
+
 
 nav.main-navigation > ul > li {
   display: block;
