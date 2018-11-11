@@ -89,8 +89,8 @@
     text-align: right;
   }
 
-  .content-element h2.content-header {
-   font-size: 3.5rem;
+  .content-element h2 {
+   font-size: 2rem;
  }
 
  .content-element .teaser {
@@ -99,9 +99,14 @@
    justify-content: left;
  }
 
- .content-element .teaser p{
+#malermeister p,
+ #service p {
    padding-right: 45%;
  }
+
+ /*bevor id bei 45% standen die teaser -> .content-element .teaser02 p*/
+
+
 
  .content-element .teaser img {
    position: absolute;
@@ -149,10 +154,12 @@
   header#main-header h1,
   .content-element > header,
   .content-element .teaser .inner-wrapper,
-  .content-element .content-text {
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
-  }
+  .content-element .content-text,
+  .content-element .teaser02 .inner-wrapper {
+  padding-left: var(--main-padding);
+  padding-right: var(--main-padding);
+ }
+
 
   footer .footer-left {
     padding-left: var(--main-padding);
@@ -251,6 +258,7 @@ header#main-header img {
   object-fit: cover;
   object-position: center;
   display: block;
+  border-bottom: 15px solid #28575b;
 }
 
 header#main-header .inner-wrapper,
@@ -268,8 +276,9 @@ header#main-header h1 {
   font-family: 'Pridi', Geordia, serif;
   font-weight: lighter;
   font-size: 9vw;
-  line-height: 1.2em;
+  line-height: 0.8em;
   text-transform: uppercase;
+  color: white;
 }
 
 
@@ -292,13 +301,14 @@ section.content-element {
   position: relative;
 }
 
-.content-element h2.content-header {
+.content-element h2 {
   font-family: 'Pridi', sans-serif;
-  font-size: 9.5vw;
+  font-size: 5vw;
   line-height: 1.2em;
   font-weight: lighter;
   text-transform: uppercase;
   word-break: break-word;
+  color: var(--grey);
 }
 
 .content-element .teaser {
@@ -323,6 +333,11 @@ section.content-element {
   height: auto;
   object-fit: cover;
   object-position: center top;
+}
+
+#malermeister .content-text {
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 
 
@@ -359,7 +374,7 @@ section.content-element {
 #brillux .content-text a.button {
   display: inline-block;
   padding: 1em 2em;
-  background: aqua;
+  background-color: #50a9b2;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -379,8 +394,36 @@ margin: 0 auto;
   text-align: center;
 }
 
+#brillux .content-text {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
 
 /*Ende content02*/
+
+/*Starte content03*/
+
+.content-element .teaser02 {
+  position: relative;
+  background-size: cover;
+  min-height: 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.content-element .teaser02 p {
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+
+.teaser02 {
+  max-width: 100%;
+  background: #28575b;
+}
+
+
 
 
 /* Hier beginnt der Footer*/
