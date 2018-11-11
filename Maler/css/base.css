@@ -99,8 +99,7 @@
    justify-content: left;
  }
 
- .content-element .teaser p,
- .content-element .content-text p {
+ .content-element .teaser p{
    padding-right: 45%;
  }
 
@@ -128,6 +127,18 @@
   .content-element .teaser {
     min-height: none;
     max-height: 40rem;
+  }
+
+  #logo {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 5rem;
+  }
+
+  #logo-part-2 {
+    width: 17rem;
+    left: 12rem;
   }
 
 }
@@ -161,22 +172,6 @@
 
 
 
-
-@media screen and (min-width: 1200px) {
-  #logo {
-      position: fixed;
-      z-index: 100;
-      top: 0;
-      left: 5rem;
-  }
-  #logo-part-2 {
-    width: 17rem;
-    left: 12rem;
-  }
-
-}
-
-
 html, body {
   margin: 0;
 }
@@ -205,7 +200,7 @@ html * {
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--grey-dark) url('../img/logo_muthwill.svg') no-repeat center center;
+  background: var(--grey-dark) url('../image/Logo_Muthwill.svg') no-repeat center center;
   background-size: 80%;
   text-indent: -9999em;
   overflow: hidden;
@@ -330,14 +325,7 @@ section.content-element {
   object-position: center top;
 }
 
-.content-img img {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
-}
+
 
 /*Das ist das Logo*/
 .content-element .content-text img {
@@ -357,10 +345,42 @@ section.content-element {
   opacity: .6;
 }
 
+/*Start content02*/
+
+.content-img img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+#brillux .content-text a.button {
+  display: inline-block;
+  padding: 1em 2em;
+  background: aqua;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#brillux .content-text a.button:hover {
+  opacity: .6;
+}
+
+#brillux .content-text {
+margin: 0 auto;
+}
+
+#brillux .content-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 /*Ende content02*/
-
-
 
 
 /* Hier beginnt der Footer*/
