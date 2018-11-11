@@ -106,8 +106,6 @@
 
  /*bevor id bei 45% standen die teaser -> .content-element .teaser02 p*/
 
-
-
  .content-element .teaser img {
    position: absolute;
    top: 0;
@@ -402,7 +400,7 @@ margin: 0 auto;
 
 /*Ende content02*/
 
-/*Starte content03*/
+/*Start content03*/
 
 .content-element .teaser02 {
   position: relative;
@@ -423,13 +421,36 @@ margin: 0 auto;
   background: #28575b;
 }
 
+/*Ende content03*/
 
+/*Start content 04*/
+
+.flexbox01 {
+display: flex;
+flex-direction: row;
+}
+
+.box01 {
+flex: 1;
+
+}
+
+.box02 {
+flex: 1;
+}
+
+.box03 {
+flex: 1;
+}
+
+/*Ende content04*/
 
 
 /* Hier beginnt der Footer*/
 footer .inner-wrapper {
   position: relative;
-  max-width: var(--screen-max);
+  width: 1200px;
+  max-height: 40%;
   margin: 0 auto;
 }
 
