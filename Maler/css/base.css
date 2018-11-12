@@ -425,14 +425,16 @@ margin: 0 auto;
 
 /*Start content 04*/
 
-.flexbox01 {
+.flex01 .flexbox01 {
 display: flex;
 flex-direction: row;
+max-width: var(--screen-max);
 }
 
-.box01 {
-flex: 1;
-
+.box01 img,
+.box02 img,
+.box03 img {
+max-width: 400px;
 }
 
 .box02 {
