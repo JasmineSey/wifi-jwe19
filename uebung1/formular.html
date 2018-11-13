@@ -9,20 +9,82 @@
 </head>
 
 <body>
+  <!-- Verschiedene Formulare -->
 
-<form method="get" action="formular.html">
-  <p>
-    <label for="female">
-      Frau
-    </label>
-    <input type="radio" name="gender" value="female">
+  <form method="get" action="formular.html">
+    <p>
+      <label for="female">
+        Frau
+      </label>
+      <input type="radio" name="gender" id="female" value="female">
 
-    <label for="male">
-      Herr
-    </label>
-    <input type="radio" name="gender" value="male">
+      <label for="male">
+        Herr
+      </label>
+      <input type="radio" name="gender" id="male" value="male">
+    </p>
+
+    <p>
+      <label for="firstname">Vorname</label>
+      <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname">
+    </p>
+    <p>
+      <label for="firstname">Nachname</label>
+      <input type="text" name="lastname" id="lastname" value="" placeholder="Nachname">
+    </p>
+
+    <p>
+      <label for="email">E-Mail</label>
+      <input type="email" name="email" id="email" value="" placeholder="E-Mail">
+    </p>
+
+    <p>
+      <label for="passwordID">Passwort</label>
+      <input type="password" name="passwordID" id="passwordID" value="">
+    </p>
+
+    <p>
+      <label for="socks">Wieviele Paar von Socken kannst du gleichzeitig tragen?</label>
+      <input type="number" name="socks" id="socks" value="" min="4" max="30" step="2">
+    </p>
+
+    <p>
+      <p>
+        <label for="aninmalfrein">Welcher Typ Mensch bist du?</label>
+      </p>
+      <select id="animalfriend" name="animalfriend" multiple>
+        <option value="TypA">Katzenmensch</option>
+        <option value="TypB">Hundemensch</option>
+        <option value="TypC">Hamstermensch</option>
+        <option value="TypD">Vogelmensch</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="notes"></label>
+    <textarea name="notes" rows="8" cols="20">Bitte füllen Sie dieses Feld aus</textarea>
   </p>
-</form>
+
+  <p>
+    <label for="agb">AGB, ja ok!</label>
+<input type="checkbox" name="agb" id="agb" value="ok" required>
+  </p>
+<!-- value wird verschickt -->
+<p>
+<input type="submit" name="submit" id="submit" value="Jetzt absenden!">
+<button>Absenden?</button>
+<input type="reset" name="reset" value="Alles löschen">
+</p>
+
+<p>
+    <input type="date" name="date" id="date" value="" placeholder="Email">
+</p>
+
+<p>
+    <input type="color" name="color" id="color" value="color" >
+</p>
+
+  </form>
 
 
 </body>

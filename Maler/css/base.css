@@ -153,7 +153,8 @@
   .content-element > header,
   .content-element .teaser .inner-wrapper,
   .content-element .content-text,
-  .content-element .teaser02 .inner-wrapper {
+  .content-element .teaser02 .inner-wrapper,
+  .kontaktformular .formular .inner-wrapper {
   padding-left: var(--main-padding);
   padding-right: var(--main-padding);
  }
@@ -475,6 +476,35 @@ height: 350px;
 }
 
 /*Ende content04*/
+
+/*Start kontaktformular*/
+
+.kontaktformular {
+  font-family: var(--base-font);
+  font-weight: lighter;
+  background-color: var(--grey-dark);
+  margin: 0;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  float: left;
+  width: 20em;
+  color: white;
+}
+
+input {
+  display: block;
+}
+
+input[type="submit"] {
+  background: orange;
+  color: white;
+  width: 390px;
+  padding: 5px;
+  text-align: center;
+}
 
 
 /* Hier beginnt der Footer*/
