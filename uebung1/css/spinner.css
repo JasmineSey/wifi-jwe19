@@ -1,0 +1,21 @@
+@keyframes spin {
+  
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 20px solid red;
+  border-radius: 50%;
+  border-top: 20px solid transparent;
+  animation: spin 1s ease-in-out infinite;
+}

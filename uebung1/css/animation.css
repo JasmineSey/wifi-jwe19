@@ -1,0 +1,58 @@
+/* A wird immer mit keyf begonnen- identifier ist der name, mit der man die ani ansprechen kann */
+/* */
+/* @keyframes moving {
+  from {
+    left: 0;
+  }
+
+  /* % der Zeit - nicht der Strecke */
+
+  25% {
+    left: 100%;
+    /* wenn man 100% verschiebt, würde man nichts mehr ansprechen
+  ergo muss das element wieder nach hinten verschoben werden -> transform schiebt
+  das element um seine breite wieder in den screen*/
+    transform: translateX(-100%)translateY(0);
+    top: 0px;
+  }
+
+  50% {
+    left: 100%;
+    top: 100px;
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  75% {
+    left: 0;
+    top: 100%;
+    transform: translateX(0) translateY(-100%);
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.crazy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  background-color: lightgreen;
+  /* Verbindung zu keyframes */
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* animation-timing-f defniert, wie sich A bewegt */
+  animation-delay: 0s;
+  /* delay Start der A */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*  animation-direction: alternate hin und her*/
+} */
+
+
+/*Spinner  */
