@@ -7,41 +7,44 @@
 
   /* % der Zeit - nicht der Strecke */
 
-  25% {
-    left: 100%;
-    /* wenn man 100% verschiebt, würde man nichts mehr ansprechen
-  ergo muss das element wieder nach hinten verschoben werden -> transform schiebt
-  das element um seine breite wieder in den screen*/
-    transform: translateX(-100%)translateY(0);
-    top: 0px;
-  }
+  @keyframes moving {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    25% {
+      left: 100%;
+      transform: translateX(-100%) translateY(0);
+      top: 0;
+    }
+        /* wenn man 100% verschiebt, würde man nichts mehr ansprechen
+      ergo muss das element wieder nach hinten verschoben werden -> transform schiebt
+      das element um seine breite wieder in den screen*/
 
-  50% {
-    left: 100%;
-    top: 100px;
-    transform: translateX(-100%) translateY(-100%);
+    50% {
+      left: 100%;
+      top: 100%;
+      transform: translateX(-100%) translateY(-100%);
+    }
+    75% {
+      left: 0;
+      top: 100%;
+      transform: translateX(0) translateY(-100%);
+    }
+    100% {
+      left: 0;
+      top: 0;
+      transform: translateX(0) translateY(0);
+    }
   }
-
-  75% {
-    left: 0;
-    top: 100%;
-    transform: translateX(0) translateY(-100%);
-  }
-
-  100% {
-    left: 0;
-    top: 0;
-    transform: translateX(0) translateY(0);
-  }
-}
 
 .crazy {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10%;
-  height: 10%;
-  background-color: lightgreen;
+  width: 30px;
+  height: 30px;
+  background-color: red;
   /* Verbindung zu keyframes */
   animation-name: moving;
   animation-duration: 2s;
@@ -52,7 +55,4 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   /*  animation-direction: alternate hin und her*/
-} */
-
-
-/*Spinner  */
+}
