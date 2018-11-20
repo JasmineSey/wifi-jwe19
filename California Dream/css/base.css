@@ -40,6 +40,10 @@
   font-weight: bold;
 }
 
+@media screen and (min-width: 400px) {
+
+}
+
 @media screen and (min-width: 576px) {
 
   .inner-wrapper {
@@ -47,6 +51,11 @@
     margin: 0 auto;
     position: relative;
   }
+
+.menu01 {
+    position: relative;
+}
+
 
   .menu01 {
     display: flex;
@@ -57,6 +66,69 @@
   nav ul li a {
 padding: 10px;
   }
+
+
+  #main-header {
+  position: relative;
+  color: white;
+  margin-bottom: 50px;
+  }
+
+  #main-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      z-index: -100;
+      position: relative;
+  }
+
+
+  #main-header .inner-wrapper .content-main-header {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 5vw;
+    left: 0;
+    z-index: 2;
+  }
+
+  #main-header .inner-wrapper .content-main-header p, h1 {
+    padding-left: 0;
+    padding-right: 45%;
+
+  }
+
+
+
+  #main-header .flagge img {
+  width: 179px;
+  height: 123px;
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  z-index: 200;
+  }
+
+  #main-header .overlay01 img {
+    width: 569px;
+    height: 78px;
+    position: absolute;
+    right: -5px;
+    bottom: -40px;
+  }
+
+  p.borte {
+    position: absolute;
+    right: 200px;
+    bottom: -25px;
+    z-index: 100;
+    color: black;
+    font-weight: bold;
+
+  }
+
 
     }
 
@@ -74,16 +146,16 @@ html {
 
 body {
   font-size: 100%;
+  font-family: var(--base-font2);
 }
 
 /* Start menu01 */
-.inner-wrapper
 
 .menu01 {
   width: 100%;
   background: white;
-  max-height: 50px;
-  padding: 15px;
+  height: auto;
+  padding-top: 10px;
 }
 
 /* Start Logo */
@@ -121,5 +193,42 @@ nav ul li a:hover {
   color: #be1616;
 }
 
-
 /* Ende Nav */
+
+/* Start main-header */
+
+#main-header {
+  color: black;
+}
+
+  #main-header img {
+      width: 100%;
+      height: 100%;
+    }
+
+  #main-header .content-main-header {
+  padding-left: 20px;
+  }
+
+    @media screen and (min-width: 576px) {
+        #main-header {
+          color: white;
+        }
+}
+
+#main-header .flagge img {
+width: 179px;
+height: 123px;
+}
+
+#main-header .overlay01 img {
+  width: 569px;
+  height: 78px;
+}
+
+.content01-box {
+  display: grid;
+  grid-template-columns: fit-content(100%);
+  grid-template-columns: repeat(3, 1fr);
+
+}
