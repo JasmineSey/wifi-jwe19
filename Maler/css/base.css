@@ -207,6 +207,8 @@ html * {
   display: none;
 }
 
+/*Start Logo*/
+
 #logo {
   width: 5rem;
   height: 5rem;
@@ -252,11 +254,90 @@ html * {
   display: inline;
 }
 
+
+/*Ende Logo*/
+
+/*Start Menü*/
+
+nav.main-menu {
+  margin: 0 auto;
+  width: 100%;
+  height: 5em;
+  text-align: right;
+  position: relative;
+  background: rgba(255, 255, 255, 1.0);
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+nav.main-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav.main-menu ul li {
+list-style: none;
+margin: 0;
+display: block;
+}
+
+nav.main-menu  ul > li > a {
+  color: #009999;
+  position: relative;
+  padding: 0 0 0.5em 0;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav.main-menu ul > li a:hover {
+  color: #03405f;
+}
+
+
+
+/*Ende Menü*/
+
+
+/*Start grid01*/
+
+.grid01 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: left;
+  flex: 1;
+}
+
+.grid01 .grid-item {
+
+}
+
+.grid01 .img  {
+max-height: 250px;
+margin: auto;
+   width: 100%;
+}
+
+
+
+.grid01 .img img {
+display: block;
+max-width: 100%;
+}
+
+/*Ende grid01*/
+
+
+
+
+
 header#main-header {
   position: relative;
   width: 100%;
   height: 45vw;
-  background: lightgreen;
   overflow: hidden;
 }
 
