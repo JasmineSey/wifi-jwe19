@@ -132,19 +132,6 @@ padding: 10px;
   }
 
 
-  footer .footer-top {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  .footer-top .footer-right > ul > li {
-    text-align: right;
-  }
-
-
-
-
     }
 
 @media screen and (min-width: 768px) {}
@@ -331,6 +318,8 @@ footer {
 
 .footer-left {
   padding-left: 5px;
+  margin: 0;
+  padding-top: 0;
 }
 
 .footer-right a {
@@ -365,6 +354,25 @@ footer .footer-bottom-right a {
 
 
   @media screen and (min-width: 576px) {
+
+
+    footer .footer-top {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .footer-top .footer-right > ul > li {
+      text-align: right;
+    }
+
+    .footer-top .footer-left p {
+      padding-right: 45%;
+    }
+
+
+
+
 
 
     .content02 {
