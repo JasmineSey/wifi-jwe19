@@ -52,20 +52,7 @@
     position: relative;
   }
 
-.menu01 {
-    position: relative;
-}
 
-
-  .menu01 {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  nav ul li a {
-padding: 10px;
-  }
 
 
   #main-header {
@@ -104,32 +91,6 @@ padding: 10px;
 
 
 
-  #main-header .flagge img {
-  width: 179px;
-  height: 123px;
-  position: absolute;
-  right: 0;
-  bottom: -60px;
-  z-index: 200;
-  }
-
-  #main-header .overlay01 img {
-    width: 569px;
-    height: 78px;
-    position: absolute;
-    right: 5px;
-    bottom: -40px;
-  }
-
-  p.borte {
-    position: absolute;
-    right: 200px;
-    bottom: -25px;
-    z-index: 100;
-    color: black;
-    font-weight: bold;
-
-  }
 
 
     }
@@ -170,17 +131,15 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   padding-right: 20px;
+
 }
 
 nav ul {
   margin: 0;
   padding: 0;
-
 }
 
 nav ul li {
-  position: relative;
-  float: right;
   list-style: none;
 }
 
@@ -213,15 +172,16 @@ nav ul li a:hover {
   }
 
 #main-header .flagge img {
-width: 179px;
-height: 123px;
+display: none;
 }
 
 #main-header .overlay01 img {
-  width: 569px;
-  height: 78px;
+display: none;
 }
 
+p.borte {
+  display: none;
+}
 
 .content01 .top-text h2 {
   text-transform: uppercase;
@@ -282,6 +242,8 @@ padding: 0 5vw;
   position: relative;
 }
 
+
+
 .grid-overlay {
   position: absolute;
   top: 0;
@@ -291,6 +253,20 @@ padding: 0 5vw;
   background-color: rgba(255, 0,0,.7);
   opacity: 0;
   transition: opacity .3s ease;
+}
+
+.grid-overlay p {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  color: white;
+  font-family: var(--font-base2);
+  font-weight: bold;
+  font-size: 150%;
 }
 
 .grid-item:hover .grid-overlay {
@@ -316,38 +292,42 @@ footer {
   font-weight: lighter;
 }
 
-.footer-left {
-  padding-left: 5px;
-  margin: 0;
-  padding-top: 0;
+.footer-top, .footer-bottom-flex {
+  padding: 0 5px;
 }
 
-.footer-right a {
+
+.footer-right ul li a {
   color: lightgray;
 }
 
+footer .footer-bottom {
+  background-color: black;
+}
+
+
 .footer-right ul {
-margin: 0;
-padding: 0;
+  padding: 0;
 }
 
 .footer-right ul li {
 list-style: none;
-padding-left: 5px;
-}
-
-.footer-bottom {
-  background-color: black;
-  padding: 10px 5px;
-  margin: 10px 0;
 }
 
 
-footer .footer-bottom-right a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
+.footer-bottom-right ul {
+  padding: 0;
 }
+
+.footer-bottom-right ul li {
+  list-style: none;
+    display: inline;
+}
+
+.footer-bottom-right ul li a {
+color: lightgray;
+}
+
 
 
 
@@ -356,21 +336,80 @@ footer .footer-bottom-right a {
   @media screen and (min-width: 576px) {
 
 
-    footer .footer-top {
+
+      .menu01 {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+
+
+    .menu01 nav ul {
       display: flex;
-      flex-direction: row;
-      flex: 1;
-    }
-
-    .footer-top .footer-right > ul > li {
-      text-align: right;
-    }
-
-    .footer-top .footer-left p {
-      padding-right: 45%;
+      justify-content: flex-end;
     }
 
 
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .footer-left > p {
+    padding-right: 45%;
+  }
+
+  footer .footer-bottom {
+    background-color: black;
+    overflow: auto;
+    width: 100%;
+  }
+
+.footer-bottom-left {
+  float: left;
+}
+
+.footer-bottom-right {
+  float: right;
+}
+
+
+
+#main-header .flagge img {
+width: 179px;
+height: 123px;
+position: absolute;
+right: 0;
+bottom: -60px;
+z-index: 200;
+display: block;
+}
+
+#main-header .overlay01 img {
+  width: 569px;
+  height: 78px;
+  position: absolute;
+  right: 5px;
+  bottom: -40px;
+  display: block;
+}
+
+p.borte {
+  position: absolute;
+  right: 200px;
+  bottom: -25px;
+  z-index: 100;
+  color: black;
+  font-weight: bold;
+  display: block;
+
+}
 
 
 
