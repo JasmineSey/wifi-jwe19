@@ -35,8 +35,9 @@ color: white;
   object-position: center;
   position: relative;
   z-index: -2;
-
 }
+
+
 
 .content01 .content-head h2 {
   color: #53868B;
@@ -131,7 +132,7 @@ footer > p {
 @media screen and (min-width: 576px) {
 
 .menu {
-  display: inline;
+  width: 100%;
   height: 150px;
 }
 

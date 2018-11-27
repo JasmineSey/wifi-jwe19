@@ -4,6 +4,8 @@
   --base-font2: 'OpenSans', sans-serif;
 }
 
+
+
 @font-face {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Thin.ttf);
@@ -51,9 +53,6 @@
     margin: 0 auto;
     position: relative;
   }
-
-
-
 
   #main-header {
   position: relative;
@@ -260,13 +259,25 @@ padding: 0 5vw;
   text-align: center;
   position: absolute;
   bottom: 40%;
-  top: 40%;
+  top: 30%;
   left: 10%;
   right: 10%;
   color: white;
   font-family: var(--font-base2);
   font-weight: bold;
   font-size: 150%;
+}
+
+.grid-overlay span {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  color: white;
+  font-size: 200%;
 }
 
 .grid-item:hover .grid-overlay {
