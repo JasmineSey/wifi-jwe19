@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #CEECF5,	#7ac5cd, #7ac5cd, #A9E2F3);
+  box-shadow: inset 0px 0px 10px #888;
+}
+
+header h1 {
+margin: 0;
+color: white;
+}
+
+.content01 {
+  position: relative;
+  width: 100%;
+}
+
+.content01 .content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+  z-index: -2;
+
+}
+
+.content01 .content-head h2 {
+  color: #53868B;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 5%;
+  text-align: right;
+  background: rgba(255,255,255, 0.5);
+}
+
+
+/*Start Conten02  */
+
+.content02 {
+  background-color: #E0F2F7;
+}
+
+.menu {
+    padding: 10px;
+    background-color: #CEECF5;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+.menu nav h2 {
+  color: #53868B;
+  margin: 0;
+}
+
+.menu nav ul li {
+  margin: 0;
+  list-style: none;
+  color: #53868B;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color:#53868B;
+}
+
+.text {
+  margin: 0;
+  padding: 10px;
+}
+
+.text .article01 {
+  margin: 0;
+}
+
+.text .article01 > h2 {
+  margin: 0;
+  font-size: 200%;
+}
+
+.text .article01 > p {
+  margin: 0;
+}
+
+.text .article01 ol > li {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #7ac5cd;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer > p {
+  margin: 0;
+  text-align: right;
+  color: white;
+}
+
+
+@media screen and (min-width: 576px) {
+
+.menu {
+  display: inline;
+  height: 150px;
+}
+
+
+  .content02 {
+    display: grid;
+    grid-template-columns: 200px auto auto;
+  }
+
+  .content02 .menu {
+    grid-column: 1 / 2;
+  }
+
+.content02 .text {
+  grid-column: 2 / 4;
+}
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+.content02 .text {
+  padding-right: 30%;
+}
+
+}
