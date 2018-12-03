@@ -301,32 +301,47 @@ nav.main-menu ul > li a:hover {
 
 /*Start grid01*/
 
-.grid01 {
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  justify-content: left;
-  flex: 1;
 }
 
-.grid01 .grid-item {
-
+.item01 {
+  width: 100%;
 }
 
-.grid01 .img  {
-max-height: 250px;
-margin: auto;
-   width: 100%;
+.item01 > p {
+  display: block;
+  text-align: center;
 }
 
-
-
-.grid01 .img img {
-display: block;
-max-width: 100%;
+.img {
+  position: relative;
 }
+
+.img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.button01 {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+   background: rgba(255, 255, 255, 0.5);
+}
+
+.button01 a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
 
 /*Ende grid01*/
 
