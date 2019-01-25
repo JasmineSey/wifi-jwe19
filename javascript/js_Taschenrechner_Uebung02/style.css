@@ -3,26 +3,19 @@ body {
   color: #fff;
 }
 
+
 .calculator {
   width: 30%;
   background: silver;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-  "screen screen screen screen"
-  "button button button button"
-  "button button button button"
-  "button button button button"
 }
 
 input.screen {
-  grid-area: screen;
-}
-
-input[type="input"].screen {
-  grid-area: screen;
   width: 100%;
+  height: 100px;
 }
 
-input[type="button"].
+input[type="button"] {
+  background: grey;
+  width: 30px;
+  height: 30px;
+}
